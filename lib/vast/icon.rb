@@ -1,8 +1,10 @@
+# frozen_string_literal: true
 require_relative 'resource.rb'
 
 module VAST
-  # Any number of Mediafile objects can be provided for a single Ad, but it is assumed that all Mediafiles belongs
-  # to a single Ad object represent the same creative unit with the same  duration, Ad-ID (ISCI code), etc.
+  # Any number of Mediafile objects can be provided for a single Ad, but it is
+  # assumed that all Mediafiles belongs to a single Ad object represent the same
+  # creative unit with the same  duration, Ad-ID (ISCI code), etc.
   class Icon < Element
     include VAST::Resource
 
@@ -14,7 +16,7 @@ module VAST
     def program
       source_node[:program]
     end
-    
+
     def width
       source_node[:width].to_i
     end
@@ -22,7 +24,7 @@ module VAST
     def height
       source_node[:height].to_i
     end
-    
+
     def xPosition
       source_node[:xPosition].to_i
     end
@@ -30,7 +32,7 @@ module VAST
     def yPosition
       source_node[:yPosition].to_i
     end
-    
+
     def duration
       source_node[:duration].to_i
     end
@@ -38,7 +40,7 @@ module VAST
     def offset
       source_node[:offset].to_i
     end
-    
+
     # Defines the method to use for communication with the companion
     def api_framework
       source_node[:apiFramework]
@@ -55,7 +57,7 @@ module VAST
     def view_tracking_url
       URI.parse source_node.at('IconViewTracking').content.strip
     end
-    
+
     # end of class
   end
 end

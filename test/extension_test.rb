@@ -1,20 +1,21 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class ExtensionTest < Test::Unit::TestCase
-  
-  def test_should_know_attributes
+  def test_should_know_attribute_type
     document_file = example_file('document_with_one_inline_ad.xml')
     document = VAST::Document.parse!(document_file)
     extension = VAST::Extension.new(document.at('Extension'))
-    
-    assert_equal "DART", extension.type
+
+    assert_equal 'DART', extension.type
   end
-  
-  def test_should_know_attributes
+
+  def test_should_know_attribute_xml
     document_file = example_file('document_with_one_inline_ad.xml')
     document = VAST::Document.parse!(document_file)
     extension = VAST::Extension.new(document.at('Extension'))
-    
+
     assert_equal extension.source_node, extension.xml
   end
 end
