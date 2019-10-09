@@ -13,7 +13,8 @@ require 'vast/companion_creative'
 require 'vast/non_linear_creative'
 require 'vast/extension'
 
-# This module wraps VAST documents, as outlined by the IAB at http://www.iab.net/media/file/VAST-2_0-FINAL.pdf
+# This module wraps VAST documents, as outlined by the IAB at
+# https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf
 module VAST
   VAST_VERSION = 2.0
   VAST_SCHEMA_XSD_FILE = File.expand_path(File.join(File.dirname(__FILE__), 'vast_2.0.1.xsd'))

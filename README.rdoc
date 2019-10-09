@@ -1,7 +1,8 @@
 = VAST {<img src="https://travis-ci.org/chrisdinn/vast.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/chrisdinn/vast]
 
 A library for parsing Digital Video Ad Serving Template (VAST) 2.0 and 3.0 XML documents, as outlined by the Interactive Advertising Bureau at
-http://www.iab.net/iab_products_and_industry_services/508676/digitalvideo/vast. VAST outlines a standard document format for communication between digital video players and ad servers, including support for
+https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/ .
+VAST outlines a standard document format for communication between digital video players and ad servers, including support for
 multiple forms of creative and tracking support that conforms to the latest IAB standards.
 
 It's recommended that you review the resources made available for the IAB. Whenever possible the documentation in this library has been

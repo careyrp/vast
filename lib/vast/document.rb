@@ -23,7 +23,7 @@ module VAST
     end
     
     # Checks whether document conforms to the VAST XML Schema Definitions, accessible at
-    # http://www.iab.net/iab_products_and_industry_services/508676/digitalvideo/vast
+    # https://github.com/InteractiveAdvertisingBureau/vast
     def valid?
       version_node = self.xpath('/VAST/@version').first
       major_version = version_node ? version_node.value.to_i : 0
