@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative 'resource.rb'
 
 module VAST

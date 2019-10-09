@@ -37,8 +37,8 @@ module VAST
       source_node.xpath('.//Tracking').to_a
                  .each_with_object({}) do |node, t_urls|
         underscored_name = underscore(node[:event]).to_sym
-        t_urls[underscored_name] ||= []
-        t_urls[underscored_name] << URI.parse(node.content.strip)
+        
+        (t_urls[underscored_name] ||= []) << URI.parse(node.content.strip)
       end
     end
 
