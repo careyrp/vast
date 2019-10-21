@@ -6,7 +6,7 @@ require 'vast/version'
 
 Gem::Specification.new do |s|
   s.name        = 'vast'
-  s.version     = VAST::Version
+  s.version     = VAST::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Chris Dinn']
   s.email       = ['chrisgdinn@gmail.com']
