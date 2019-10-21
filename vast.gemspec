@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'vast/version'
+require_relative 'vast/version'
 
 Gem::Specification.new do |s|
   s.name        = 'vast'
