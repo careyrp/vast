@@ -1,0 +1,4 @@
+* @dataxu/sre-chapter @dataxu/chapter-user-interface
+CODEOWNERS @dataxu/releng
+Dockerfile @dataxu/releng
+Jenkinsfile @dataxu/releng
