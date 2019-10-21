@@ -1,6 +1,8 @@
 # frozen_string_literal: true
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
 
-require_relative 'vast/version'
+require 'vast/version'
 
 Gem::Specification.new do |s|
   s.name        = 'vast'
